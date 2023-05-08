@@ -33,7 +33,7 @@ const TodoApp = () => {
   // This function is used to add task to the list
   const addTasksToList = async () => {
     if (task === "") {
-      toast("Write Something...");
+      toast("Add the task here...");
       return;
     }
     await fetch("https://jsonplaceholder.typicode.com/todos/?userId=1", {
@@ -84,7 +84,7 @@ const TodoApp = () => {
 
   const updatingTask = async () => {
     if (task === "") {
-      toast("Write Something...");
+      toast("Add your task here...");
       return;
     }
     await fetch("https://jsonplaceholder.typicode.com/todos/?userId=1", {
@@ -141,7 +141,7 @@ const TodoApp = () => {
       <input
         type="text"
         className="addtoTask"
-        placeholder="Write Something....."
+        placeholder="Add your task here....."
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />

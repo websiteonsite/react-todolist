@@ -31,7 +31,7 @@ const Todo_App = () => {
       .then((data) => {
         // console.log(`Successfully Added: '${data.title}'`);
         if (task == "") {
-          notify("Write Something...");
+          notify("Add your task here...");
           return;
         }
         setList([...list, { title: task }]);
